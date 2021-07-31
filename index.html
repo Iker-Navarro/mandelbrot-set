@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mandelbrot set</title>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <h3 class="title">Mandelbrot Set</h3>
+            <p>Left click to zoom in</p>
+            <p>Right click to zoom out</p>
+            <p>Current zoom level <span id="zoom-level"></span></p>
+
+            <label for="zoom-factor">Zoom Factor</label>
+            <div class="form-button-group">
+                <input type="text" value="value" id="zoom-factor">
+                <button id="zoom-button">change</button>
+            </div>
+
+            <label for="iterations">Iterations foreach pixel</label>
+            <div class="form-button-group">
+                <input type="text" value="value" id="iterations">
+                <button id="iteration-button">change</button>
+            </div>
+            
+        </div>
+        <canvas id="canvas"></canvas>
+    </div>
+    <script src="./js/main.js" type="module"></script>
+</body>
+</html>
